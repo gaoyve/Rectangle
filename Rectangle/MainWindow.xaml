@@ -1,0 +1,32 @@
+﻿<Window x:Class="Rectangle.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Rectangle"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+
+
+
+        </Grid.ColumnDefinitions>
+
+        <TextBox x:Name="lengthBox" HorizontalAlignment="Left" Height="23" Margin="238,37,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="16" TextChanged="lengthBox_TextChanged"/>
+        <TextBox x:Name="widthBox" HorizontalAlignment="Left" Height="23" Margin="238,84,0,0" TextWrapping="Wrap"  Text="" VerticalAlignment="Top" Width="120" FontSize="16" TextChanged="widthBox_TextChanged"/>
+        <TextBox x:Name="strokeThicknessBox" HorizontalAlignment="Left" Height="23" Margin="238,128,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="strokeThicknessBox_TextChanged" FontSize="18"/>
+
+        <TextBlock x:Name="lengthBlock" HorizontalAlignment="Left" Margin="140,37,0,0" TextWrapping="Wrap" Text="Length: " VerticalAlignment="Top" Height="23" FontSize="18"/>
+        <TextBlock x:Name="WidthBlock" HorizontalAlignment="Left" Margin="140,84,0,0" TextWrapping="Wrap" Text="Width: " VerticalAlignment="Top" Height="23" FontSize="18"/>
+        <TextBlock x:Name="colorBlock" HorizontalAlignment="Left" Margin="140,172,0,0" TextWrapping="Wrap" Text="Color: " VerticalAlignment="Top" Height="23" FontSize="18" RenderTransformOrigin="0.465,0.061"/>
+        <TextBlock x:Name="strokeThicknessBlock" HorizontalAlignment="Left" Margin="140,128,0,0" TextWrapping="Wrap" Text="Thickness: " VerticalAlignment="Top" Height="23" FontSize="18"/>
+
+        <Button x:Name="Confirm" Content="Confirm" HorizontalAlignment="Left" Margin="140,244,0,0" VerticalAlignment="Top" Width="60" Height="30" Click="Confirm_Click"/>
+        <Button x:Name="Cancel" Content="Cancel" HorizontalAlignment="Left" Margin="220,244,0,0" VerticalAlignment="Top" Width="60" Height="30" Click="Cancel_Click"/>
+        <Button x:Name="Close" Content="Close" HorizontalAlignment="Left" Margin="298,244,0,0" VerticalAlignment="Top" Width="60" Height="30" Click="Close_Click"/>
+
+        <xctk:ColorPicker Name="colorPicker" SelectedColorChanged="colorPicker_SelectedColorChanged"  DisplayColorAndName = "True" Margin="238,172,154.429,119.143"/>
+    </Grid>
+</Window>
