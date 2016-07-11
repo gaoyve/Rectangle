@@ -164,7 +164,6 @@ namespace Rectangle
             widthBox.Text = "";
             strokeThicknessBox.Text = "";
             colorPicker.SelectedColor = null;
-
         }
 
         private void Close_Click(object sender, RoutedEventArgs e)
