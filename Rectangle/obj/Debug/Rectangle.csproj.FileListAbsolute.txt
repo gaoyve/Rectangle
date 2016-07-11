@@ -16,5 +16,17 @@ C:\Users\Gerry\Documents\Visual Studio 2015\Projects\Rectangle\Rectangle\obj\Deb
 C:\Users\Gerry\Documents\Visual Studio 2015\Projects\Rectangle\Rectangle\obj\Debug\Rectangle.exe
 C:\Users\Gerry\Documents\Visual Studio 2015\Projects\Rectangle\Rectangle\obj\Debug\Rectangle.pdb
 C:\Users\Gerry\Source\Repos\Rectangle\Rectangle\bin\Debug\Rectangle.exe.config
+C:\Users\Gerry\Source\Repos\Rectangle\Rectangle\bin\Debug\Rectangle.exe
+C:\Users\Gerry\Source\Repos\Rectangle\Rectangle\bin\Debug\Rectangle.pdb
+C:\Users\Gerry\Source\Repos\Rectangle\Rectangle\obj\Debug\MainWindow.g.cs
+C:\Users\Gerry\Source\Repos\Rectangle\Rectangle\obj\Debug\ShowRecWindow.g.cs
+C:\Users\Gerry\Source\Repos\Rectangle\Rectangle\obj\Debug\App.g.cs
+C:\Users\Gerry\Source\Repos\Rectangle\Rectangle\obj\Debug\Rectangle_MarkupCompile.cache
+C:\Users\Gerry\Source\Repos\Rectangle\Rectangle\obj\Debug\Rectangle_MarkupCompile.lref
+C:\Users\Gerry\Source\Repos\Rectangle\Rectangle\obj\Debug\MainWindow.baml
+C:\Users\Gerry\Source\Repos\Rectangle\Rectangle\obj\Debug\ShowRecWindow.baml
+C:\Users\Gerry\Source\Repos\Rectangle\Rectangle\obj\Debug\Rectangle.g.resources
+C:\Users\Gerry\Source\Repos\Rectangle\Rectangle\obj\Debug\Rectangle.Properties.Resources.resources
+C:\Users\Gerry\Source\Repos\Rectangle\Rectangle\obj\Debug\Rectangle.csproj.GenerateResource.Cache
 C:\Users\Gerry\Source\Repos\Rectangle\Rectangle\obj\Debug\Rectangle.exe
 C:\Users\Gerry\Source\Repos\Rectangle\Rectangle\obj\Debug\Rectangle.pdb

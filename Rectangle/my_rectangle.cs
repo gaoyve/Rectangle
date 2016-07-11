@@ -8,8 +8,8 @@ namespace Rectangle
 {
     public class my_rectangle
     {
-        const Double default_len = 10.0; //默认长
-        const Double default_wid = 5.0;  //默认宽
+        public const Double default_len = 10.0; //默认长
+        public const Double default_wid = 5.0;  //默认宽
         public Double length;
         public Double width;
         

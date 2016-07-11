@@ -85,19 +85,22 @@ namespace Rectangle
         private void strokeThicknessBox_TextChanged(object sender, TextChangedEventArgs e)
         {
             String inputStrokeThickness = strokeThicknessBox.Text;
-            try
+            if (inputStrokeThickness != null)
             {
-                strokeThickness = Convert.ToDouble(inputStrokeThickness);
-            }
-            catch (FormatException)
-            {
-                Console.WriteLine("Unable to convert '{0}' to a Double.", inputStrokeThickness);
-                //MessageBox.Show("Unable to convert '{0}' to a Double.", inputStrokeThickness);
-            }
-            catch (OverflowException)
-            {
-                Console.WriteLine("'{0}' is outside the range of a Double.", inputStrokeThickness);
-                //MessageBox.Show("'{0}' is outside the range of a Double.", inputStrokeThickness);
+                try
+                {
+                    strokeThickness = Convert.ToDouble(inputStrokeThickness);
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("Unable to convert '{0}' to a Double.", inputStrokeThickness);
+                    //MessageBox.Show("Unable to convert '{0}' to a Double.", inputStrokeThickness);
+                }
+                catch (OverflowException)
+                {
+                    Console.WriteLine("'{0}' is outside the range of a Double.", inputStrokeThickness);
+                    //MessageBox.Show("'{0}' is outside the range of a Double.", inputStrokeThickness);
+                }
             }
         }
 
@@ -108,25 +111,29 @@ namespace Rectangle
         
         private void Confirm_Click(object sender, RoutedEventArgs e)
         {
-            if (Length == null && Width == null)
-            {
-                my_rectangle showRec = new my_rectangle();
-                Rec.length = showRec.length * RATE; Rec.width = showRec.width * RATE;
-            }
-            else if (Length == null || Width == null)
-            {
-                Double len = Convert.ToDouble( Length ?? Width);
-                my_rectangle showRec = new my_rectangle(len);
-                Rec.length = showRec.length * RATE; Rec.width = showRec.width * RATE;
-            }
-            else if (Length != null && Width != null)
-            {
-                Double len = Convert.ToDouble(Length);
-                Double wid = Convert.ToDouble(Width);
-                my_rectangle showRec = new my_rectangle(len, wid);
-                Rec.length = showRec.length * RATE; Rec.width = showRec.width * RATE;
-            }
+            //if (Length == null && Width == null)
+            //{
+            //    my_rectangle showRec = new my_rectangle();
+            //    Rec.length = showRec.length * RATE; Rec.width = showRec.width * RATE;
+            //}
+            //else if (Length == null || Width == null)
+            //{
+            //    Double len = Convert.ToDouble( Length ?? Width);
+            //    my_rectangle showRec = new my_rectangle(len);
+            //    Rec.length = showRec.length * RATE; Rec.width = showRec.width * RATE;
+            //}
+            //else if (Length != null && Width != null)
+            //{
+            //    Double len = Convert.ToDouble(Length);
+            //    Double wid = Convert.ToDouble(Width);
+            //    my_rectangle showRec = new my_rectangle(len, wid);
+            //    Rec.length = showRec.length * RATE; Rec.width = showRec.width * RATE;
+            //}
 
+            Rec.length = (Length ?? Rec.length) * RATE;
+            Rec.width = (Width ?? Rec.width) * RATE;
+
+            
             //
             // Show The rectangle
             drawRec();
@@ -150,6 +157,7 @@ namespace Rectangle
 
             showRectangleWindow.Show();
         }
+
         private void Cancel_Click(object sender, RoutedEventArgs e)
         {
             lengthBox.Text = "";
