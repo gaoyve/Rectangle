@@ -30,3 +30,4 @@ C:\Users\Gerry\Source\Repos\Rectangle\Rectangle\obj\Debug\Rectangle.Properties.R
 C:\Users\Gerry\Source\Repos\Rectangle\Rectangle\obj\Debug\Rectangle.csproj.GenerateResource.Cache
 C:\Users\Gerry\Source\Repos\Rectangle\Rectangle\obj\Debug\Rectangle.exe
 C:\Users\Gerry\Source\Repos\Rectangle\Rectangle\obj\Debug\Rectangle.pdb
+C:\Users\Gerry\Source\Repos\Rectangle\Rectangle\obj\Debug\Rectangle.csprojResolveAssemblyReference.cache
